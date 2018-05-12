@@ -1,0 +1,135 @@
+﻿{
+  "CreationDate": "2018-5-11",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "http://songs-by-sinatra.herokuapp.com/",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "/html/body/section/p",
+      "Value": "Welcome to this website all about the songs of the great Frank Sinatra"
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//img[@src='/images/sinatra.jpg']",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=log in",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=About",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "link=About",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "/html/body/section/p",
+      "Value": "This site is a demonstration of how to build a website using Sinatra."
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=log in",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=Contact",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "link=Contact",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "/html/body/section/p",
+      "Value": "You can contact me by filling in the form below:"
+    },
+    {
+      "Command": "assertText",
+      "Target": "//label[@for='name']",
+      "Value": "Name:"
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//input[@name='name']",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "//label[@for='email']",
+      "Value": "Email:"
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//input[@name='email']",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "//label[@for='message']",
+      "Value": "Your Message:"
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//textarea[@name='message']",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//input[@value='Send Message']",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=log in",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=Songs",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "link=Songs",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "/html/body/section/h1",
+      "Value": "Songs"
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=My Way",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=Lo que un dia fue no sera",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=New York",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=log in",
+      "Value": ""
+    }
+  ]
+}
