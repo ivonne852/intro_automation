@@ -1,0 +1,75 @@
+﻿{
+  "CreationDate": "2018-5-11",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "http://songs-by-sinatra.herokuapp.com/",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=Contact",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "link=Contact",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//input[@name='name']",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//input[@name='email']",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//textarea[@name='message']",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "//input[@name='name']",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "//input[@name='name']",
+      "Value": "test"
+    },
+    {
+      "Command": "click",
+      "Target": "//input[@name='email']",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "//input[@name='email']",
+      "Value": "test@test.com"
+    },
+    {
+      "Command": "click",
+      "Target": "//textarea[@name='message']",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "//textarea[@name='message']",
+      "Value": "test"
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "//input[@value='Send Message']",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "//div[@class='flash notice']",
+      "Value": "Thank you for your message. We'll be in touch soon."
+    }
+  ]
+}
