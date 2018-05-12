@@ -1,0 +1,200 @@
+﻿{
+  "CreationDate": "2018-5-11",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "http://songs-by-sinatra.herokuapp.com/",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=log in",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "link=log in",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "id=username",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "id=password",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=username",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=username",
+      "Value": "frank"
+    },
+    {
+      "Command": "click",
+      "Target": "id=password",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=password",
+      "Value": "sinatra"
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "//input[@value='Log In']",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "//div[@class='flash notice']",
+      "Value": "You are now logged in as frank"
+    },
+    {
+      "Command": "open",
+      "Target": "http://songs-by-sinatra.herokuapp.com/",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=Songs",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "link=Songs",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=Create a new song",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "link=Create a new song",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "id=title",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "id=length",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "id=released_on",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "id=lyrics",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//input[@value='Save Song']",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=title",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=title",
+      "Value": "test"
+    },
+    {
+      "Command": "click",
+      "Target": "id=length",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=length",
+      "Value": "10"
+    },
+    {
+      "Command": "type",
+      "Target": "id=released_on",
+      "Value": "05/11/2018"
+    },
+    {
+      "Command": "click",
+      "Target": "id=lyrics",
+      "Value": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=lyrics",
+      "Value": "test"
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "//input[@value='Save Song']",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "//div[@class='flash notice']",
+      "Value": "Song successfully added"
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=Songs",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "link=Songs",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "link=test",
+      "Value": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "link=test",
+      "Value": ""
+    },
+    {
+      "Command": "assertElementPresent",
+      "Target": "//input[@value='Like']",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "//input[@value='Like']",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "id=like",
+      "Value": "This song has been liked once"
+    },
+    {
+      "Command": "click",
+      "Target": "//input[@value='Like']",
+      "Value": ""
+    },
+    {
+      "Command": "assertText",
+      "Target": "id=like",
+      "Value": "This song has been liked 2 times"
+    }
+  ]
+}
